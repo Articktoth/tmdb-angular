@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Movies</h2>
+    <div class="card-deck">
+        <div *ngFor="let movie of movies">
+            <div class="card mx-1 my-1" style="max-width: 150px;">
+                <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2{{movie.poster_path}}" alt="">
+                <div class="card-body">
+                    <h5>{{movie.title}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
